@@ -1,0 +1,52 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    
+</head>
+<body>
+    <div id = "containner">
+        <div id = "wrapper-parent">
+            <section id="left-child" class="child">
+                    <h1 id="left-header">Welcome to ATM</h1>
+                 
+                <form id="getMoney">
+                    <label for="amt">Enter the Amount</label> 
+                    <input type="text" name="amt" id="amt"/>
+                    <button name="submit" type="button" onclick="getCount()" id="getMoneyButton">Get Money</button>
+                </form>
+            </section>
+            <section id="right-child" class="child">
+                <h3 id="header-right">You will get the following amount</h3>
+                <section>
+                    <rows id="Denomination1">0 notes of Rs 1</rows>
+                    <rows id="Denomination2">0 notes of Rs 2</rows>
+                </section>
+                <section>
+                        <rows id="Denomination5">0 notes of Rs 5</rows>
+                        <rows id="Denomination10">0 notes of Rs 10</rows>
+                </section>
+                <section>
+                        <rows id="Denomination20">0 notes of Rs 20</rows>
+                        <rows id="Denomination50">0 notes of Rs 50</rows>
+                </section>
+                <section>
+                        <rows id="Denomination100">0 notes of Rs 100</rows>
+                        <rows id="Denomination200">0 notes of Rs 200</rows>
+                </section>
+                <section>
+                        <rows id="Denomination500">0 notes of Rs 500</rows>
+                        <rows id="Denomination2000">0 notes of Rs 2000</rows>
+                </section>
+                <section>
+                        <rows id="totalNotes"> Total notes dispensed : 0</rows>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
