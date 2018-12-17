@@ -1,0 +1,118 @@
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+    flex: 100%;
+    text-align: right;
+    margin-right: 2%;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .overlay{
+    position: fixed; /* Sit on top of the page content */
+    display: block; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer;
+}
+.overlay-content{
+    display: flex;
+    background: white;
+    flex-direction: column;
+    margin:2% auto;
+    width: 75%;
+}
+.overlaySections{
+    display: flex;
+    flex-direction: row;
+}
+.overlayLeft{
+    flex:50%;
+}
+.overlayLeftContent{
+    margin: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    flex-direction: column;
+    border-top: 0.5em solid rgb(231, 225, 225);
+}
+.overlayLeftContent div {
+    margin: 0 auto;
+}
+.overlayTitle {
+    font-size: 1.5em;
+    color: #aaa;
+}
+.overlayPrice {
+    font-size: 3em;
+    line-height: 2em;
+}
+.overlayPrice div {
+    display: inline-block;
+    font-size: .5em;
+}
+.sizeandqty {
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    padding-top: 20%;
+}
+.overlaySize, .overlayQty {
+    padding: 1em;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: black;
+    border: 1px solid #aaa;
+    margin: 1% !important;
+    flex: 50%;
+}
+.overlaySize select, .overlayQty select {
+    border: none;
+    width: 100%;
+}
+.overlayOperationButton {
+    padding-top: 5%;
+    width: 65%;
+}
+.overlayButton {
+    border: 0px;
+    text-align: center;
+    background-color: #3076CE;
+    color: #ffffff;
+    width: 100%;
+    box-sizing: content-box;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    font-size: 1em;
+    font-weight: bold;
+}
+.overlayAnchor {
+    text-decoration-line: underline;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 2em;
+}
+.overlayRight{
+    flex:50%;
+}
+.overlayImage{
+    width:75%;
+    margin:10%;
+}
+.overlayImage img{
+    width: 100%;
+}

@@ -1,50 +1,60 @@
+import OverlayComponent from './OverlayComponent';
+
 export default class ItemComponent{
-    constructor(item){
+    constructor(parent,item){
+      this.parent=parent;
         this.imgUrl=item.imgUrl;
-        this.brand= item.brand;
-        this.description=item.description;
+        this.title= item.title;
+        this.style=item.style;
+        this.color=item.color;
         this.quantity=item.quantity;
         this.size=item.size;
         this.price=item.price;
+        this.id = item.id;
+
+        this.render();
     }
     render(){
-        let markUp=` <div class="item">
-        <div class="image">
-          <img src=${this.imgUrl}  />
-        </div>
-       
-        <div class="right-content">
-        <div class="description">
-          <p>
-              ${this.brand}
-          </p>
-          <p>${this.description}</p>
-          
-          <div class="buttons">
-              <button class="btns">EDIT</button>
-              <button class="btns">X REMOVE</button>
-              <button class="btns">SAVE FOR LATER</button>
-          </div>
-        </div>
+      const self={context: this};
+      let markUp =`<section class="item-container">
+        <section class="item">
+          <article class="img">
+            <img class="image" src="${this.imgUrl}">
+          </article>
+          <article class="description">
+            <div class="heading">${this.title} <br/>COTTON TSHIRT</div>
+            <div>
+              <span>Style #:</span> <span>${this.style}</span>
+            </div>
+            <div>
+              <span>Colour :</span> <span>${this.color}</span>
+            </div>
+            <div>
+              <span>Size :</span>  <span>${this.size}</span>
+            </div>
+            <div class="qty"> 
+              <span>QTY:</span>
+              <input type="text" value=${this.quantity} disabled id="textbox"/>
+            </div>
+            <div class="amount">
+              $ <span class="amt">${this.price}</span>
+            </div>
+          </article>
+          <section class="buttonsSection">
+          <button class="edit" id="edit_${this.id}">EDIT</button>
+          <button class="remove">X REMOVE</button>
+          <button class="save">SAVE FOR LATER</button>
+        </section>
+        </section
+      </section>`;
+      let openModal=function(){
+        new OverlayComponent("#overlay",this.context.id,"edit");
+      }
+      $(this.parent).append(markUp);
+      let boundFunc=openModal.bind(self);
       
-        <span class="size">
-          ${this.size} 
-        </span>
-        <span class="quantity">
-         <input type="text" value="${this.quantity}" name="quant" id="quant"/> 
-        </span>
-        
-     
-        <div class="total-price">$ ${this.price}</div>
-      </div>
+      $('#edit_'+`${this.id}`).on('click',boundFunc);
       
-      </div>
-      <div class="button-480">
-              <button class="btns">EDIT</button>
-              <button class="btns">X REMOVE</button>
-              <button class="btns">SAVE FOR LATER</button>
-          </div>`;
-
-      return markUp;
+      
     }
 }

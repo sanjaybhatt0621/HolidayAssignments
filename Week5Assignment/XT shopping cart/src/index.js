@@ -1,18 +1,13 @@
-import ShoppingCartComponent  from './components/ShoppingCartComponent';
+import ShoppingCartComponent  from './components/shoppingCartComponent';
+
 
 class MainComponent{
     constructor(){
-        this.shoppingCart = new ShoppingCartComponent();
-    }
-    render(){
-        const mainDiv=this.shoppingCart.render().then(result =>{
-            document.getElementById("homeDiv").innerHTML=result;
-        });
+        this.shoppingCart = new ShoppingCartComponent('.container');
         
-        //return shoppingCart();
-        
-
     }
+    
 }
-const mainComponent= new MainComponent();
-mainComponent.render();
+new MainComponent();
+
+

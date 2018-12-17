@@ -1,0 +1,146 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "Nike",
+      "style": "Men Black Printed DRI-FIT AS M NK DRY TEE LGD ADRENALINE T-shirt",
+      "color": "Blue",
+      "size": "Medium",
+      "quantity": "1",
+      "price": "450",
+      "imgUrl": "src/images/tshirt1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "ether",
+      "style": "e+ Men Teal Solid Round Neck T-shirt",
+      "color": "Blue",
+      "size": "Medium",
+      "quantity": "1",
+      "price": "419",
+      "imgUrl": "src/images/tshirt3.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "size": "Small",
+      "quantity": "1",
+      "price": "550",
+      "imgUrl": "src/images/tshirt2.jpg"
+    },
+    {
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium",
+      "id": 94
+    },
+    {
+      "imgUrl": "src/images/suggestion3.jpg",
+      "price": "550",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large",
+      "id": 52
+    },
+    {
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium",
+      "id": 11
+    },
+    {
+      "imgUrl": "src/images/suggestion2.jpg",
+      "price": "550",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large",
+      "id": 18
+    },
+    {
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium",
+      "id": 48
+    },
+    {
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium",
+      "id": 31
+    },
+    {
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium",
+      "id": 55
+    },
+    {
+      "id": 96,
+      "imgUrl": "src/images/suggestion3.jpg",
+      "price": "550",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Small"
+    }
+  ],
+  "suggestionCarousel": [
+    {
+      "id": "item1",
+      "title": "Nike",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "color": "Blue",
+      "imgUrl": "src/images/suggestion1.jpg",
+      "price": "550",
+      "quantity": "2",
+      "size": "Medium"
+    },
+    {
+      "id": "item2",
+      "imgUrl": "src/images/suggestion2.jpg",
+      "price": "550",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large"
+    },
+    {
+      "id": "item3",
+      "imgUrl": "src/images/suggestion3.jpg",
+      "price": "550",
+      "title": "Nike",
+      "color": "Black",
+      "quantity": "2",
+      "style": "Men Purple ELEMENT DRI-FIT Technology Running Hooded Standard Fit T-shirt",
+      "size": "Large"
+    }
+  ]
+}

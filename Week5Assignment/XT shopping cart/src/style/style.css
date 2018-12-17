@@ -5,7 +5,7 @@
   html,
   body {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     margin: 0;
     background-color: #7EC855;
     font-family: 'Roboto', sans-serif;
@@ -15,8 +15,6 @@
   .container{
     display: inherit;
     flex-direction: inherit;
-    margin: 0 auto;
-    width:90%;
   }
   .headerClass{
     display: flex;
@@ -25,6 +23,7 @@
     border-top: #5E6977 5px solid;
     font-size: 1em;
     line-height: 3em;
+    box-sizing: border-box;
     
     
     
@@ -67,7 +66,7 @@
   }
 
   .title {
-    /* height: 10%; */  
+    height: 10%;
     border-bottom: 1px solid #E1E8EE;
     padding: 20px 30px;
     color: #5E6977;
@@ -77,7 +76,7 @@
    
   .item {
     padding: 20px 30px;
-    /* height: 300px; */
+    height: 300px;
     display: flex;
     border-bottom: rgba(94, 105, 119, 0.212) solid 1px;
   }
@@ -92,7 +91,7 @@
     bottom: 0;
     align-content: center;
     margin: 20px auto;
-    display: inline-block;
+    display: flex;
   }
   .delete-btn,
   .like-btn {
@@ -163,10 +162,8 @@
 .description{
     padding-right: 5%;
     padding-left: 5%;
-    /* margin-right: 60px; */
-    width: 45%;
     position: relative;
-    box-sizing: border-box;
+    width: 30%;
 }
   
   .description span {
@@ -261,87 +258,14 @@
     font-weight: 300;
 }
   .image img {
-    
+    width: 100%;
+    height: 100%;
     display: block;
   }
 
-  #quant
-  {
-    border:2px solid lightgray;
-  }
+ 
 
-  @media all and (max-width: 480px)
-  {
-    .buttons
-    {
-      display: none;
-    }
-    .item
-    {
-     display: flex;
-     flex-direction: row;
-     padding:5%;
-    }
-    image img
-    {
-      width:inherit;
-      height: inherit;
-    }
-    .image
-    {
-      width: 50%;
-      
-    }
-    .size
-    {
-      margin-left: 20%;
-    }
-    right-content
-    {
-      width:50%;
-    }
-    .container
-    {
-    display: flex;
-    flex-direction: column;
-  }
-  .shopping-cart
-  {
-    width: 100%;
-  }
-  .suggestions
-  {
-    width:100%;
-  }
-  .headerClass
-  {
-    display: none;
-  }
-  .title
-  {
-    font-size:1.2em;
-    padding-left: 5%;
-  }
-  .description
-  {
-    display:block;
-    width:auto;
-  }
-  .size, .quantity,.total-price
-  {
-    padding-top: 5%;
-  }
-  .button-480 {
-    
-    
-    align-content: center;
-    margin: 20px auto;
-    display: inline-block;
-  }
-
-  }
-
-  /* @media (max-width: 800px) {
+  @media (max-width: 800px) {
     .shopping-cart {
       width: 100%;
       height: auto;
@@ -363,11 +287,16 @@
       width: 100%;
       text-align: center;
       margin: 6px 0;
-    /* }
     } */
-
-
     .buttons {
       margin-right: 20px;
     }
-  
+  }
+
+  @media only screen and (max-device-width: 568px) 
+  {
+    .questions
+    {
+      display:none;
+    }
+  }
