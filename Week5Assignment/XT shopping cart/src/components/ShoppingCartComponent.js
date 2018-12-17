@@ -25,8 +25,8 @@ export default class ShoppingCartComponent{
                         </section>
                         <ul class="HeaderDesktop">
                                 <li class="items">${result.length} ITEMS</li>
-                                <li class="size">size</li>
-                                <li class="qty">qty</li>
+                                <li class="">size</li>
+                                <li class="">qty</li>
                                 <li class="price">price</li>
                         </ul>
                         <div id="itemsDiv">

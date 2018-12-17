@@ -8,9 +8,11 @@ export default class ImageCarouselComponent{
     render(){
         let markup=`
         <div class="mySlides fade">
-          <div class="numbertext"></div>
-          <img src=${this.imgUrl} style="width:100%">
-          <div class="text">${this.price}</div>
+          
+          <div class="imageDiv">
+            <img  class="imageClass" src=${this.imgUrl} >
+          </div>
+          <div class="carouselPrice">$${this.price}</div>
         </div>`;
         $(this.parent).append(markup);
     }

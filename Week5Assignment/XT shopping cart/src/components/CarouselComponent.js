@@ -18,7 +18,10 @@ export default class CarouselComponent{
        
             <a class="prev" id="prevButton">&#10094;</a>
             <a class="next" id="nextButton">&#10095;</a>
-            <button id="viewDetails" class="viewDetails">View Details</button>
+            <div class ="viewDetailContainer">
+                <button id="viewDetails" class="viewDetails">View Details</button>
+            </div>
+            
         </div>`;
         $(this.parent).append(markUp);
         result.forEach(carouselImage => {
